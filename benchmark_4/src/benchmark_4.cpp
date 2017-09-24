@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+#include "SystemInfo.h"
+
 void mainImpl();
 
 int main() {
@@ -19,9 +21,6 @@ int main() {
 
 void mainImpl()
 {
-	cout << "C++ standard: " << __cplusplus << endl;
-	cout << "Position: " << __FILE__ << ":" << __LINE__ << endl;
-	cout << "Function: " << __func__ << endl;
-
+	SystemInfo::printInfo();
 }
 
